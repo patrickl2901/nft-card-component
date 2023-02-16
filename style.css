@@ -1,0 +1,139 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-mainbg: hsl(217, 54%, 11%);
+    --very-dark-blue-cardbg: hsl(216, 50%, 16%);
+    --very-dark-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%)
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--very-dark-blue-mainbg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.card {
+    width: 280px;
+    background-color: var(--very-dark-blue-cardbg);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.equilibrium-img {
+    width: 280px;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 255, 247, .60);
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.icon-view {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.nft-title {
+    color: var(--white);
+    font-size: 22px;
+    transition: 0.3s ease-out;
+}
+
+.nft-title:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.nft-desc {
+    margin-bottom: 0;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price-eth {
+    color: var(--cyan);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time-days {
+    margin-left: 5px;
+}
+
+.nft-price-time {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--very-dark-blue);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.creator-name {
+    color: var(--white);
+    margin-left: 5px;
+    transition: 0.3s ease-out;
+}
+
+.creator-name:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border: solid 2px var(--white);
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.attribution {
+    margin-top: 20px;
+}
